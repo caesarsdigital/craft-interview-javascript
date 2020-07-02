@@ -1,0 +1,39 @@
+.idea
+.DS_Store
+.project
+.vscode
+node_modules/chromedriver/lib/chromedriver/chromedriver
+node_modules
+build
+reports
+browserstack.err
+local.log
+@rerun.txt
+usage.txt
+userNameData.csv
+**/properties_file.txt
+browserRuntimeVersion.json
+conf/environment/dev.account.json
+conf/environment/environments.dev.json
+features/LocalTest.feature
+
+# Appium / webdriverio
+.chromedrivers/chromedriver*
+errorShots
+appsUnderTest/*.zip
+appsUnderTest/*.apk
+
+# Node.js
+npm-debug.log
+
+# Others
+*.log
+.git
+coverage
+screenshots/**/*
+cucumber-js-results
+
+BrowserStackLocal
+cucumber-js-results/
+.npm
+.config

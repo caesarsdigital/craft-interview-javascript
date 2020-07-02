@@ -1,0 +1,30 @@
+{
+  "GPT": {
+    "name": "Liberty - GPT",
+    "id": "gpt",
+    "url": "https://gpt.williamhill-test.com/us/nj/bet",
+    "credentials": {
+      "valid": {
+        "email": "qa17@gpt.com",
+        "password": "test1234"
+      },
+      "invalid": {
+        "email": "Invalidq8sbmlls@mailosaur.io",
+        "password": "n0ns3ns3"
+      }
+    }
+  },
+  "USC": {
+    "name": "Liberty - USC NJ",
+    "id": "usc",
+    "url": "https://usc.williamhill-test.com/us/nj/bet",
+    "credentials": {
+      "valid": {
+        "email": "test_auto@test.com",
+        "password": "test1234",
+        "accountName": "Jake"
+      }
+    }
+  }
+}
+
