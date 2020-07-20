@@ -1,5 +1,5 @@
 {
-  "name": "Craft Interview",
+  "name": "Craft-Interview",
   "version": "0.0.1",
   "description": "test",
   "license": "UNLICENSED",
@@ -9,7 +9,7 @@
     "lint-gherkin": "gherkin-lint",
     "lint": "npm run lint-gherkin && npm run lint-code",
     "test": "./node_modules/.bin/wdio config/runner-config/local.conf.js",
-    "test:ci": "wdio config/runner-config/ci.conf.js",
+    "test:ci": "wdio config/runner-config/ci.conf.js"
   },
   "pre-push": [
     "lint"
@@ -19,7 +19,6 @@
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "@babel/register": "^7.8.3",
-    "@sqa/neo-data-generator": "^3.0.12",
     "@wdio/allure-reporter": "^5.18.6",
     "@wdio/appium-service": "^5.0.0",
     "@wdio/cli": "^5.16.11",
@@ -40,6 +39,7 @@
     "browserstack-local": "^1.4.5",
     "chai": "^4.2.0",
     "chrome-modheader": "^1.0.5",
+    "chromedriver": "^83.0.1",
     "cucumber": "^6.0.5",
     "eslint": "^5.10.0",
     "eslint-config-airbnb-base": "^14.0.0",

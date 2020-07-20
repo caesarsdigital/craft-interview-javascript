@@ -1,7 +1,6 @@
-import loginPage from './NeoWidget/loginPage/LoginPage';
-import neoWidget from './NeoWidget/NeoWidget';
+import loginPage from './loginPage/LoginPage';
 
 export {
+    // eslint-disable-next-line import/prefer-default-export
     loginPage,
-    neoWidget,
 };

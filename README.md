@@ -30,7 +30,7 @@ Then go to the folder where you checked out the files:
 ```npm config set strict-ssl false && npm i```
 
 Run the tests locally with:
-```STATE=NJ ENV=GPT npm run test```
+```STATE=NJ ENV=TEST npm run test```
 
 ### Structure
 `config/*` the configuration files for the tests are stored here, including URL's etc
@@ -56,7 +56,7 @@ Note: actually using the locators is more performant then having a class member,
 login_steps.js
 ```
 When(/^I am logged in as a Player$/, function () {
-    NeoWidget.login(CONFIG.credentials.valid.email, CONFIG.credentials.valid.password);
+    somePage.login(CONFIG.credentials.valid.email, CONFIG.credentials.valid.password);
 });
 ```
 
@@ -64,8 +64,8 @@ If there is no way to avoid page transition waits, please do the transition in t
 E.g.:
 ```
 When(/^I am logged in as a Player$/, function () {
-    NeoWidget.login(CONFIG.credentials.valid.email, CONFIG.credentials.valid.password);
-    SomeOtherPage.someElement.waitForDisplayed(); // <= do this to conclude your step and leave it in a clean state
+    somePage.login(CONFIG.credentials.valid.email, CONFIG.credentials.valid.password);
+    someOtherPage.someElement.waitForDisplayed(); // <= do this to conclude your step and leave it in a clean state
 });
 
 ```

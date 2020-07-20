@@ -6,6 +6,8 @@ const state = process.env.STATE.toLocaleUpperCase();
 const env = process.env.ENV.toUpperCase();
 const environmentJson = require('./environment-config')[state];
 
+console.log(environmentJson);
+
 module.exports = {
     viewports: viewportJson,
     ...environmentJson[env || DEFAULT_ENV],
