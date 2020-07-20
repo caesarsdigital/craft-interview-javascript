@@ -14,7 +14,7 @@ Feature: Interview task
   # Please automate the following scenario through the API in the given framework
   @task-2
   Scenario: Developer can retrieve sporting events for the next 24 hours from the API
-    Given I am logged in to the Sportsbook
-    When I log into my account via another client
-    Then my first session must be terminated
+    Given I retrieve all events from the API
+    When the events are filtered for the next 24 hours
+    Then all the remaining events are from the next 24 hours
 
