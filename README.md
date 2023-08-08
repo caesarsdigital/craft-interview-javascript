@@ -82,4 +82,12 @@ When(/^I am logged in as a Player$/, async function () {
 ```
 
 ### Where do I start?
-Review the existing feature files to find scenarios that need automating.
+There are four existing feature files in this project.
+Each contain a scenario that has undefined test steps.
+Create and complete the undefined test steps for the scenario.
+It is recommended to start with the scenario tagged `@task-1` first, unless otherwise instructed.
+
+### Tips
+- Try to verbalize your thought processes
+- If you're unsure about your approach, ask for feedback
+- You can look up reference material if needed (stackoverflow, google, etc.)

@@ -16,5 +16,6 @@ Feature: Interview task 2
       | baseball |
 
   # Note:
-  # There are different ways to get to a specific sport category
-  # Choose which route you'd like to automate, but elaborate on why you decided it
+  # There are different ways to get to a specific sport category.
+  # Choose which route you'd like to automate, but elaborate on why you decided it.
+  # The first step is already complete, you'll need to definite and complete any other steps.

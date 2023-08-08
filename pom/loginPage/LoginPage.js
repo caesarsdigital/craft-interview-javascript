@@ -5,8 +5,8 @@ class LoginPage extends Page {
   get appHeader() {
     return $(L.APP_HEADER);
   }
-  get closeSignInPage() {
-    return $(L.CLOSE_SIGNIN_PAGE);
+  get errorMessage() {
+    return $(L.ERROR_MESSAGE);
   }
 }
 

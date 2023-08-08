@@ -13,4 +13,4 @@ Feature: Interview task 3
   # Note:
   # There are different ways to change the odds displayed
   # The requirement here is to automate the process of changing the setting from the BETSLIP only
-  # AND do this while using a mobile-sized viewport
+  # AND do this while using a mobile-sized viewport.
