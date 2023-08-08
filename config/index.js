@@ -9,9 +9,9 @@ const environmentJson = require('./environment-config')[state];
 console.log(environmentJson);
 
 module.exports = {
-    viewports: viewportJson,
-    ...environmentJson[env || DEFAULT_ENV],
-    id: process.env.ENV || DEFAULT_ENV,
+  viewports: viewportJson,
+  ...environmentJson[env || DEFAULT_ENV],
+  id: process.env.ENV || DEFAULT_ENV,
 };
 
-// What does this file do? Can you describe?
+// What does this file do? Can you implement it?

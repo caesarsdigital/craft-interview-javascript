@@ -1,14 +1,10 @@
-import { Given, Then } from 'cucumber';
+import { Given, When, Then } from '@cucumber/cucumber';
+import { expect } from 'chai'; // Assertion library (https://www.chaijs.com/api/bdd/)
 import { loginPage } from '../pom';
+import stateConfig from '../config/environment-config/stateConfig.json';
 
 // What is this file for?
-// Hint:
-// if you need to pass values between the steps,
-// use the scenario level CONFIG variable which is set up in common.conf.js
-// e.g.: CONFIG.foo = 'foo'
-
-Given(/^I am on the Sportsbook$/, function () {
-    loginPage.open(CONFIG.url);
+Given(/^I am on the Sportsbook$/, async function () {
+  await loginPage.open(stateConfig.NJ.url); // How could this be implemented to run in other states dynamically?
+  await loginPage.appHeader.waitForDisplayed();
 });
-
-Then('The login widget is displayed', () => loginPage.email.waitForDisplayed());

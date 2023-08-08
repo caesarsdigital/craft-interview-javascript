@@ -1,5 +1,5 @@
-const NJ = require('./nj.json');
+const NJ = require('./stateConfig.json');
 
 module.exports = {
-    NJ,
+  NJ,
 };
