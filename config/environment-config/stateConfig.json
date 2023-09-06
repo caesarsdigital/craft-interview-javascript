@@ -1,21 +1,21 @@
 {
-  "TEST": {
-    "name": "Liberty - test",
+  "NJ": {
+    "name": "New Jersey Sportsbook",
     "id": "test",
-    "url": "https://www.williamhill.com/us/nj/bet/",
+    "url": "https://sportsbook.caesars.com/us/nj/bet",
     "credentials": {
       "invalid": {
-        "email": "qa@williamhill.com",
+        "email": "interviewer@caesars.com",
         "password": "password"
       }
     }
   },
-  "TEST2": {
-    "name": "Other environment config",
+  "NY": {
+    "name": "New York Sportsbook",
     "id": "test2",
-    "url": "https://www.williamhill.com/us/nj/bet/",
+    "url": "https://sportsbook.caesars.com/us/ny/bet",
     "credentials": {
-      "valid": {
+      "invalid": {
         "email": "something@test.com",
         "password": "passowrd",
         "accountName": "Jake"

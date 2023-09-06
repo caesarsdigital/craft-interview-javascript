@@ -1,34 +1,30 @@
 {
-  "parser": "babel-eslint",
-  "extends": "airbnb-base",
+  "parser": "@babel/eslint-parser",
+  "extends": ["airbnb-base", "prettier"],
   "env": {
     "es6": true,
     "jasmine": true,
     "node": true,
     "mocha": true
   },
-  "plugins": [],
+  "plugins": ["prettier"],
   "rules": {
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": false
+      }
+    ],
     "lines-between-class-members": "off",
     "global-require": "off",
     "no-param-reassign": "off",
-    "generator-star-spacing": [
-      0
-    ],
-    "complexity": [
-      1,
-      8
-    ],
-    "indent": [
-      2,
-      4
-    ],
-    "no-console": [
-      0
-    ],
-    "no-underscore-dangle": [
-      0
-    ],
+    "generator-star-spacing": [0],
+    "complexity": [1, 8],
+    "prettier/prettier": ["error"],
+    "no-console": [0],
+    "no-underscore-dangle": [0],
     "max-len": [
       2,
       120,
@@ -36,19 +32,17 @@
         "ignoreRegExpLiterals": true
       }
     ],
-    "spaced-comment": [
-      0
-    ],
+    "spaced-comment": [0],
     "require-jsdoc": "off",
     "valid-jsdoc": "off",
     "function-paren-newline": "warn",
     "func-names": "off",
     "no-unused-expressions": "off",
     "class-methods-use-this": "off",
-    "prefer-arrow-callback": "off"
+    "prefer-arrow-callback": "off",
+    "no-await-in-loop": "off"
   },
   "globals": {
-    "CI_PIPELINE_ID": "readonly",
     "$": "readonly",
     "$$": "readonly",
     "CONFIG": "readonly",
