@@ -9,6 +9,7 @@ exports.config = {
   capabilities: [
     {
       browserName: 'chrome',
+      browserVersion: 'stable',
     },
   ],
   // Level of logging verbosity: trace | debug | info | warn | error | silent

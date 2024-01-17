@@ -3,6 +3,7 @@
 
 stages:
   - NJ
+  - publish
 
 variables:
   DOCKER_IMAGE: docker-registry.prod.williamhill.plc/usd/wdio-selenium-tests-node-12:latest
@@ -17,6 +18,7 @@ NJ-GPD:sportsbook:
     ENV: GPT
     STATE: NJ
     TAG: "@sportsbook"
+  when: manual
 
 push-latest-docker-image:
   stage: publish
@@ -30,3 +32,4 @@ push-latest-docker-image:
       - schedules
     variables:
       - $DOCKER_IMAGE_BUILD == "true"
+  when: manual
