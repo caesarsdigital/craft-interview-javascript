@@ -41,6 +41,9 @@ Run the tests locally with:
 ```npm run test```
 
 #### API Tests
+To avoid conflicts with Cucumber configurations, API tests are nested within the `api` folder 
+and have a separate configuration from the UI automation tests. To run API tests, you'll need 
+to change your directory to the `api` folder, install npm packages there, and run this script: 
 ```npm run api```
 
 ### Environment Variables

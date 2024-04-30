@@ -1,4 +1,4 @@
-const { Before } = require('@cucumber/cucumber');
+const { Before } = require('@wdio/cucumber-framework');
 const viewports = require('../config/viewports.json');
 
 Before({ tags: '@mobile' }, async function () {

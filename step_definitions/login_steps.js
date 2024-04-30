@@ -1,4 +1,4 @@
-import { Given, When, Then } from '@cucumber/cucumber';
+import { Given, When, Then } from '@wdio/cucumber-framework';
 import { expect } from 'chai'; // Assertion library (https://www.chaijs.com/api/bdd/)
 import { loginPage } from '../pom';
 import stateConfig from '../config/environment-config/stateConfig.json';
