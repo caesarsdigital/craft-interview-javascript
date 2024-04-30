@@ -4,7 +4,6 @@ require('dotenv').config();
 exports.config = {
   runner: 'local',
   specs: ['../../features/**/*.feature'],
-  exclude: ['../../features/api/*.feature'],
   maxInstances: 10,
   capabilities: [
     {

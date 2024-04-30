@@ -1,0 +1,15 @@
+{
+  "name": "craft_interview_api",
+  "version": "2.0.1",
+  "license": "UNLICENSED",
+  "author": "Caesars Digital",
+  "scripts": {
+    "api": "cucumber-js"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.6.0",
+    "axios": "^1.6.8",
+    "chai": "^4.3.7",
+    "dotenv": "^16.3.1"
+  }
+}
